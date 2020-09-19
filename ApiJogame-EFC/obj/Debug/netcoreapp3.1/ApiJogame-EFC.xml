@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiJogame-EFC</name>
+    </assembly>
+    <members>
+        <member name="M:ApiJogame_EFC.Controllers.JogadoresController.Get">
+            <summary>
+            Lista todos os jogadores
+            </summary>
+            <returns>Lista de jogadores</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Controllers.JogadoresController.GetById(System.Guid)">
+            <summary>
+            Busca um jogador por ID
+            </summary>
+            <param name="id">ID do jogador</param>
+            <returns>Jogador buscado pelo ID</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Controllers.JogadoresController.Post(ApiJogame_EFC.Domains.Jogador)">
+            <summary>
+            Cadastra um jogador
+            </summary>
+            <param name="jogador">Objeto jogador a ser cadastrado</param>
+            <returns>Jogador cadastrado</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Controllers.JogadoresController.Put(System.Guid,ApiJogame_EFC.Domains.Jogador)">
+            <summary>
+            Edita um jogador
+            </summary>
+            <param name="id">ID do jogador a ser editado</param>
+            <param name="jogador">Objeto jogador a ser editado</param>
+            <returns>Jogo editado</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Controllers.JogadoresController.Delete(System.Guid)">
+            <summary>
+            Deleta um jogador
+            </summary>
+            <param name="id">ID do jogador</param>
+            <returns>Jogador deletado</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Controllers.JogosController.Get">
+            <summary>
+            Lista todos os jogos
+            </summary>
+            <returns>Lista de jogos</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Controllers.JogosController.GetById(System.Guid)">
+            <summary>
+            Busca um jogo por ID
+            </summary>
+            <param name="id">ID do jogo</param>
+            <returns>Jogo buscado pelo ID</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Controllers.JogosController.Post(ApiJogame_EFC.Domains.Jogo)">
+            <summary>
+            Cadastra um jogo
+            </summary>
+            <param name="jogo">Objeto jogo a ser cadastrado</param>
+            <returns>Jogo cadastrado</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Controllers.JogosController.Put(System.Guid,ApiJogame_EFC.Domains.Jogo)">
+            <summary>
+            Edita um jogo
+            </summary>
+            <param name="id">ID do jogo a ser editado</param>
+            <param name="jogo">Objeto jogo a ser editado</param>
+            <returns>Jogo editado</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Controllers.JogosController.Delete(System.Guid)">
+            <summary>
+            Deleta um jogo
+            </summary>
+            <param name="id">ID do jogo</param>
+            <returns>Jogo deletado</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ApiJogame_EFC.Interfaces.IJogadorRepository.Listar" -->
+        <member name="M:ApiJogame_EFC.Interfaces.IJogadorRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Busca os jogadores por id
+            </summary>
+            <param name="id">ID do jogador</param>
+            <returns>Jogador</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogadorRepository.AdicionarJogo(System.Collections.Generic.List{ApiJogame_EFC.Domains.JogosJogadores})">
+            <summary>
+            Adiciona jogos ao jogador
+            </summary>
+            <param name="jogosJogador">Lista jogos jogador</param>
+            <returns>Jogo adicionado ao jogador</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogadorRepository.Adicionar(ApiJogame_EFC.Domains.Jogador)">
+            <summary>
+            Adiciona um novo jogador
+            </summary>
+            <param name="jogador">Objeto Jogador</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogadorRepository.Remover(System.Guid)">
+            <summary>
+            Remove um jogador
+            </summary>
+            <param name="id">ID do Jogador</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogadorRepository.Editar(ApiJogame_EFC.Domains.Jogador)">
+            <summary>
+            Edita um jogador
+            </summary>
+            <param name="jogador">Objeto Jogador</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogoRepository.Listar">
+            <summary>
+            Lista todos os jogos
+            </summary>
+            <returns>Lista de jogos</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogoRepository.BuscarPorNome(System.String)">
+            <summary>
+            Busca os jogos por nome
+            </summary>
+            <param name="nome">Nome do jogo</param>
+            <returns>Lista de jogos</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogoRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Busca um jogo por Id
+            </summary>
+            <param name="id">Id do jogo</param>
+            <returns>Jogo</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogoRepository.Adicionar(ApiJogame_EFC.Domains.Jogo)">
+            <summary>
+            Adiciona um jogo
+            </summary>
+            <param name="jogo">Objeto jogo</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogoRepository.Remover(System.Guid)">
+            <summary>
+            Remove um jogo pelo seu Id
+            </summary>
+            <param name="id">Id do jogo</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Interfaces.IJogoRepository.Editar(ApiJogame_EFC.Domains.Jogo)">
+            <summary>
+            Edita um jogo
+            </summary>
+            <param name="jogo">Objeto jogo</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogadorRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Busca um jogador por seu ID
+            </summary>
+            <param name="id">Id do jogador</param>
+            <returns>Jogador buscado por ID</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogadorRepository.Listar">
+            <summary>
+            Lista todos os jogadores 
+            </summary>
+            <returns>Lista de jogadores</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogadorRepository.Adicionar(ApiJogame_EFC.Domains.Jogador)">
+            <summary>
+            Adiciona um novo jogador
+            </summary>
+            <param name="jogador">Objeto jogador a ser criado</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogadorRepository.AdicionarJogo(System.Collections.Generic.List{ApiJogame_EFC.Domains.JogosJogadores})">
+            <summary>
+            Adiciona um jogo ao jogador
+            </summary>
+            <param name="jogosJogador">Lista de jogos do jogador</param>
+            <returns>Jogo adicionado ao jogador</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogadorRepository.Editar(ApiJogame_EFC.Domains.Jogador)">
+            <summary>
+            Edita um jogador
+            </summary>
+            <param name="jogador">Jogador a ser editado</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogadorRepository.Remover(System.Guid)">
+            <summary>
+            Remove um jogador
+            </summary>
+            <param name="id">ID do jogador</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogoRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Busca o jogo por Id
+            </summary>
+            <param name="id">Id do jogo</param>
+            <returns>Jogo</returns>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogoRepository.Adicionar(ApiJogame_EFC.Domains.Jogo)">
+            <summary>
+            Adiciona um jogo ao nosso contexto
+            </summary>
+            <param name="jogo">Jogo a ser adicionado</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogoRepository.Editar(ApiJogame_EFC.Domains.Jogo)">
+            <summary>
+            Edita um jogo
+            </summary>
+            <param name="jogo">Jogo a ser editado</param>
+        </member>
+        <member name="M:ApiJogame_EFC.Repositories.JogoRepository.Remover(System.Guid)">
+            <summary>
+            Remove um produto
+            </summary>
+            <param name="id">Id do jogo</param>
+        </member>
+    </members>
+</doc>
